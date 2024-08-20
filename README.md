@@ -39,28 +39,36 @@ First I created the following resource group:
 ![Resource Group](Images/resourcegroup.jpg)
 
 ### 1. Ingest Data
-I started by ingesting data from source into Azure Data Lake Storage Gen2 using Azure Data Factory. I used ADF to orchestrate the ETL (Extract, Transform, Load) process. ADF connected to the data sources and ingested the data into a cloud-based storage solution, automating the data extraction and loading processes,
-ensuring a smooth and efficient data ingestion workflow.
+I started by ingesting data from source into Azure Data Lake Storage Gen2 using Azure Data Factory. I used ADF to orchestrate the ETL (Extract, Transform, Load) process. ADF connected to the data sources and ingested the data into a cloud-based storage solution, automating the data extraction and loading processes, ensuring a smooth and efficient data ingestion workflow.
 
-![Data Ingestion](path_to_your_screenshot)
+![Data Ingestion](Images/datafactory.jpg)
+
+![Linked Services](Images/linkedservices.jpg)
 
 ### 2. Store Raw Data
 Once the data was ingested, I securely stored it in Azure Data Lake Storage Gen2. This provided a reliable and scalable repository for my raw data, which I could access whenever needed for processing.
+ 
+![Raw Data Storage](Images/storageaccount.jpg)
 
-*Screenshot of Raw Data in ADLS*  
-![Raw Data Storage](path_to_your_screenshot)
+![container](Images/container.jpg)
+
+![Raw data](Images/raw_data.jpg)
 
 ### 3. Transform Data
 I then used Azure Databricks to transform the raw data. By leveraging Apache Spark, I cleaned the data, corrected data types, and structured it for analysis. To ensure secure access to the data stored in Azure Data Lake, I connected through a SAS token.
 
-*Screenshot of Data Transformation in Databricks*  
-![Data Transformation](path_to_your_screenshot)
+![Connection](Images/databricks_connection.jpg)
+
+![list files](Images/list_files.jpg)
 
 ### 4. Store Transformed Data
 After transformation, I saved the cleaned and organized data back into Azure Data Lake Storage Gen2. This step ensured that the data was structured and readily available for the next phase of analysis.
 
-*Screenshot of Transformed Data in ADLS*  
-![Store Transformed Data](path_to_your_screenshot)
+![Store Transformed Data](Images/save_data.jpg)
+
+![Transformed Data Folders](Images/transformed_datafolders.jpg)
+
+![Transformed Data](Images/transformed_data.jpg)
 
 ### 5. Analyze Data
 Finally, I used Azure Synapse Analytics to analyze the transformed data. I wrote and executed SQL queries to explore the data and extract meaningful insights, such as:
@@ -68,8 +76,15 @@ Finally, I used Azure Synapse Analytics to analyze the transformed data. I wrote
   - Top countries that won gold medals
   - Average number of entries by gender for each discipline
 
-*Screenshot of Data Analysis in Synapse*  
-![Data Analysis](path_to_your_screenshot)
+![Data Analysis](Images/synapse.jpg)
+
+### 5. Results
+
+![Total Number of Athletes for each Country](Images/Total Number of Athletes for each Country.jpg)
+
+![Top countries who won Gold Medal](Images/Top countries who won Gold Medal.jpg)
+
+![Avg number of entries by Gender For Each Discipline](Images/Avg number of entries by Gender For Each Discipline.jpg)
 
 ## Conclusion
 
@@ -100,8 +115,5 @@ In this project, I successfully used various Microsoft Azure tools to manage and
 4. **Data Analysis**:
    - Set up Azure Synapse Analytics.
    - Use the provided SQL scripts to query the transformed data and generate insights.
-
-## Contact
-For any inquiries or issues, feel free to reach out to me at [fatimabintetanveer@gmail.com](mailto:fatimabintetanveer@gmail.com).
-
+   
 ---
