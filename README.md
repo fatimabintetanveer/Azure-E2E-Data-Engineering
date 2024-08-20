@@ -8,6 +8,8 @@ In this project, I developed an end-to-end data engineering pipeline to analyze 
 
 The architecture for this project involves several key components, each playing a crucial role in the end-to-end data engineering process:
 
+![Architecture](Images/architecture.jpg)
+
 ### Data Source
 - **Source**: Kaggle
 - **Description**: Raw datasets related to the Tokyo Olympics, including comprehensive information on athletes, coaches, events, and results.
