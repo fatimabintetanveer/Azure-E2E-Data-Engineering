@@ -79,12 +79,16 @@ Finally, I used Azure Synapse Analytics to analyze the transformed data. I wrote
 ![Data Analysis](Images/synapse.jpg)
 
 ### 5. Results
+ 
+![Athletes by Country](Images/athletes_by_country.jpg)  
+*This chart displays the total number of athletes representing each country in the competition.*
+ 
+![Gold Medal Winners](Images/gold_medal_winners.jpg)  
+*This visualization highlights the top countries that won the most gold medals.*
+  
+![Entries by Gender](Images/entries_by_gender.jpg)  
+*This graph illustrates the average number of entries categorized by gender for each discipline.*
 
-![Total Number of Athletes for each Country](Images/Total Number of Athletes for each Country.jpg)
-
-![Top countries who won Gold Medal](Images/Top countries who won Gold Medal.jpg)
-
-![Avg number of entries by Gender For Each Discipline](Images/Avg number of entries by Gender For Each Discipline.jpg)
 
 ## Conclusion
 
@@ -115,5 +119,5 @@ In this project, I successfully used various Microsoft Azure tools to manage and
 4. **Data Analysis**:
    - Set up Azure Synapse Analytics.
    - Use the provided SQL scripts to query the transformed data and generate insights.
-   
+
 ---
