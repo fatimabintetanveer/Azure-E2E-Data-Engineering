@@ -16,38 +16,26 @@ The architecture for this project involves several key components, each playing 
 - **Tool Used**: Azure Data Factory (ADF)
 - **Role**: Orchestrates the ETL (Extract, Transform, Load) process by connecting to various data sources and ingesting data into cloud-based storage.
 
-*Screenshot of Azure Data Factory Pipeline*  
-![Data Factory Pipeline](path_to_your_screenshot)
-
 ### Raw Data Storage
 - **Tool Used**: Azure Data Lake Storage Gen2 (ADLS Gen2)
 - **Role**: Provides scalable and secure storage for raw data, ensuring efficient storage and access for large volumes of data.
-
-*Screenshot of Data Lake Storage*  
-![Data Lake Storage](path_to_your_screenshot)
 
 ### Data Transformation
 - **Tool Used**: Azure Databricks
 - **Role**: Facilitates data processing and transformation using Apache Spark. This includes data cleaning, transformation, and preparation for structured analysis.
 
-*Screenshot of Azure Databricks Notebook*  
-![Databricks Notebook](path_to_your_screenshot)
 
 ### Transformed Data Storage
 - **Tool Used**: Azure Data Lake Storage Gen2 (ADLS Gen2)
 - **Role**: Stores transformed data, making it readily available for efficient querying and analysis.
 
-*Screenshot of Transformed Data in ADLS*  
-![Transformed Data](path_to_your_screenshot)
-
 ### Data Analytics
 - **Tool Used**: Azure Synapse Analytics
 - **Role**: Provides a unified experience for big data and data warehousing, enabling advanced querying and analysis of transformed data.
 
-*Screenshot of Azure Synapse Analytics*  
-![Synapse Analytics](path_to_your_screenshot)
-
 ## Workflow
+First I created the following resource group:
+![Resource Group](Images\resourcegroup.png)
 
 ### 1. Ingest Data
 I started by ingesting data from Kaggle into Azure Data Lake Storage Gen2 using Azure Data Factory. ADF allowed me to automate the ETL process, ensuring a smooth and efficient data ingestion workflow.
