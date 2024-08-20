@@ -35,12 +35,13 @@ The architecture for this project involves several key components, each playing 
 
 ## Workflow
 First I created the following resource group:
+
 ![Resource Group](Images/resourcegroup.jpg)
 
 ### 1. Ingest Data
-I started by ingesting data from Kaggle into Azure Data Lake Storage Gen2 using Azure Data Factory. ADF allowed me to automate the ETL process, ensuring a smooth and efficient data ingestion workflow.
+I started by ingesting data from source into Azure Data Lake Storage Gen2 using Azure Data Factory. I used ADF to orchestrate the ETL (Extract, Transform, Load) process. ADF connected to the data sources and ingested the data into a cloud-based storage solution, automating the data extraction and loading processes,
+ensuring a smooth and efficient data ingestion workflow.
 
-*Screenshot of Data Ingestion in ADF*  
 ![Data Ingestion](path_to_your_screenshot)
 
 ### 2. Store Raw Data
