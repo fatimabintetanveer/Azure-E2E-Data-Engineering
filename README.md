@@ -74,7 +74,7 @@ After transformation, I saved the cleaned and organized data back into Azure Dat
 Finally, I used Azure Synapse Analytics to analyze the transformed data. I wrote and executed SQL queries to explore the data and extract meaningful insights, such as:
   - Total number of athletes for each country
   - Top countries that won gold medals
-  - Average number of entries by gender for each discipline
+  - Average number of entries by gender for each discipline.
 
 ![Data Analysis](Images/synapse.jpg)
 
